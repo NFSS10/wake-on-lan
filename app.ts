@@ -8,8 +8,8 @@ function magicPacket(macAddress: string): Buffer {
     const parts = macAddress.match(/[0-9a-fA-F]{2}/g);
     if (!parts || parts.length != 6) throw new Error(`"${macAddress}" is an invalid MAC address`);
 
-    const uInt8Arr = parts.map(p => hexToDecimal(p));
-    const macBuf = Buffer.from(uInt8Arr);
+    const uInt8Arr: number[] = parts.map(p => hexToDecimal(p));
+    const macBuf: Buffer = Buffer.from(uInt8Arr);
 
     let buffer: Buffer = Buffer.alloc(6).fill(0xff);
     for (let i = 0; i < 16; i++) buffer = Buffer.concat([buffer, macBuf]);
