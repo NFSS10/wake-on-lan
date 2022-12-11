@@ -1,26 +1,26 @@
 {
-  "name": "wake-on-lan",
-  "version": "1.0.0",
-  "description": "Wake on Lan util in Typescript",
-  "main": "app.js",
-  "scripts": {
-    "prettier": "prettier --write \"**/*.+(ts|js|json|css|md)\"",
-    "pretty": "npm run prettier",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NFSS10/wake-on-lan-js.git"
-  },
-  "author": "NFSS10",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NFSS10/wake-on-lan-js/issues"
-  },
-  "homepage": "https://github.com/NFSS10/wake-on-lan-js#readme",
-  "devDependencies": {
-    "@types/node": "^18.11.13",
-    "prettier": "^2.8.1",
-    "typescript": "^4.9.4"
-  }
+    "name": "wake-on-lan",
+    "version": "1.0.0",
+    "description": "Wake on Lan util in Typescript",
+    "main": "app.js",
+    "scripts": {
+        "prettier": "prettier --write \"**/*.+(ts|js|json|css|md)\"",
+        "pretty": "npm run prettier",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NFSS10/wake-on-lan-js.git"
+    },
+    "author": "NFSS10",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/NFSS10/wake-on-lan-js/issues"
+    },
+    "homepage": "https://github.com/NFSS10/wake-on-lan-js#readme",
+    "devDependencies": {
+        "@types/node": "^18.11.13",
+        "prettier": "^2.8.1",
+        "typescript": "^4.9.4"
+    }
 }
