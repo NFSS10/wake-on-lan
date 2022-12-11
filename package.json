@@ -4,6 +4,8 @@
   "description": "Wake on Lan util in Typescript",
   "main": "app.js",
   "scripts": {
+    "prettier": "prettier --write \"**/*.+(ts|js|json|css|md)\"",
+    "pretty": "npm run prettier",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/NFSS10/wake-on-lan-js#readme",
   "devDependencies": {
     "@types/node": "^18.11.13",
+    "prettier": "^2.8.1",
     "typescript": "^4.9.4"
   }
 }
