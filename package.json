@@ -1,7 +1,7 @@
 {
     "name": "wake-on-lan",
-    "version": "1.0.0",
-    "description": "Wake on Lan util in Typescript",
+    "version": "0.1.0",
+    "description": "Send WOL Magic Packets to your devices",
     "main": "app.js",
     "scripts": {
         "build": "npx tsc",
@@ -14,14 +14,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/NFSS10/wake-on-lan-js.git"
+        "url": "git+https://github.com/NFSS10/wake-on-lan.git"
     },
     "author": "NFSS10",
-    "license": "ISC",
+    "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/NFSS10/wake-on-lan-js/issues"
+        "url": "https://github.com/NFSS10/wake-on-lan/issues"
     },
-    "homepage": "https://github.com/NFSS10/wake-on-lan-js#readme",
+    "homepage": "https://github.com/NFSS10/wake-on-lan#readme",
     "devDependencies": {
         "@types/node": "^18.11.13",
         "@typescript-eslint/eslint-plugin": "^5.46.0",
