@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import dgram from "dgram";
 
 function hexToDecimal(hex: string): number {
@@ -46,3 +47,22 @@ async function wake(macAddress: string, IPv4: string, port: number): Promise<boo
         });
     });
 }
+
+(async () => {
+    dotenv.config();
+
+    const macAddress: string | null = process.env.MAC_ADDRESS || null;
+    const ip: string | null = process.env.IP || null;
+    const port: number | null = process.env.PORT ? parseInt(process.env.PORT) : null;
+
+    try {
+        if (macAddress === null) throw new Error('"MAC_ADDRESS" is not set');
+        if (ip === null) throw new Error('"MAC_ADDRESS" is not set');
+        if (port === null) throw new Error('"MAC_ADDRESS" is not set');
+
+        await wake(macAddress, ip, port);
+    } catch (error) {
+        console.error("Error:", error);
+        process.exit(1);
+    }
+})();
