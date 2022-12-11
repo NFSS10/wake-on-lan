@@ -4,8 +4,10 @@
     "description": "Wake on Lan util in Typescript",
     "main": "app.js",
     "scripts": {
+        "lint": "eslint .",
+        "lint-fix": "eslint . --fix",
         "prettier": "prettier --write \"**/*.+(ts|js|json|css|md)\"",
-        "pretty": "npm run prettier",
+        "pretty": "npm run prettier && npm run lint-fix",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -20,6 +22,11 @@
     "homepage": "https://github.com/NFSS10/wake-on-lan-js#readme",
     "devDependencies": {
         "@types/node": "^18.11.13",
+        "@typescript-eslint/eslint-plugin": "^5.46.0",
+        "@typescript-eslint/parser": "^5.46.0",
+        "eslint": "^8.29.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
         "prettier": "^2.8.1",
         "typescript": "^4.9.4"
     }
